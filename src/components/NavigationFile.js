@@ -30,7 +30,7 @@ export default function AppNavigation() {
                     iconName = focused ? 'planet' : 'planet-outline';
                 } else if (route.name === 'State') {
                     iconName = focused ? 'bug' : 'bug-outline';
-                } else if (route.name === 'State') {
+                } else if (route.name === 'Toggle') {
                     iconName = focused ? 'toggle' : 'toggle-outline';
                 }
 
