@@ -1,6 +1,7 @@
 import Home from '../screens/Home'
 import AnotherFile from '../screens/SomeFile';
 import SomeClass from '../screens/MountingFile';
+import ScreenToggling from '../screens/ToggleScreen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -29,6 +30,8 @@ export default function AppNavigation() {
                     iconName = focused ? 'planet' : 'planet-outline';
                 } else if (route.name === 'State') {
                     iconName = focused ? 'bug' : 'bug-outline';
+                } else if (route.name === 'Toggle') {
+                    iconName = focused ? 'toggle' : 'toggle-outline';
                 }
 
                 // You can return any component that you like here!
@@ -41,6 +44,7 @@ export default function AppNavigation() {
                 <Tab.Screen name="Home" component={Home} />
                 <Tab.Screen name="Space" component={AnotherFile} />
                 <Tab.Screen name="State" component={SomeClass} />
+                <Tab.Screen name="Toggle" component={ScreenToggling} />
             </Tab.Navigator>
         </NavigationContainer>
     );
