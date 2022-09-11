@@ -1,9 +1,10 @@
-import Home from './src/screens/Home';
-import AnotherFile from './src/screens/SomeFile';
+import Home from '../screens/Home'
+import AnotherFile from '../screens/SomeFile';
+import SomeClass from '../src/screens/MountingFile'
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import SomeClass from './src/screens/MountingFile'
+
 
 const Tab = createBottomTabNavigator();
 
