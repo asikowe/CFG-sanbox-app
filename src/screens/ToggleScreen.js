@@ -1,6 +1,6 @@
 import { ImageBackground, StyleSheet, Text, View, StatusBar } from 'react-native';
 
-export default function Home() {
+export default function ScreenToggling() {
     return (
         <View style={styles.container1}>
             <StatusBar style="dark-content" backgroundColor="#000000" translucent={true} />
