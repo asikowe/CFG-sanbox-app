@@ -27,6 +27,8 @@ export default function AppNavigation() {
                         : 'home-outline';
                 } else if (route.name === 'Space') {
                     iconName = focused ? 'planet' : 'planet-outline';
+                } else if (route.name === 'State') {
+                    iconName = focused ? 'bug' : 'bug-outline';
                 }
 
                 // You can return any component that you like here!
