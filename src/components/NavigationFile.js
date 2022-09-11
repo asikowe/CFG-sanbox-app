@@ -1,6 +1,6 @@
 import Home from '../screens/Home'
 import AnotherFile from '../screens/SomeFile';
-import SomeClass from '../src/screens/MountingFile'
+import SomeClass from '../screens/MountingFile';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
