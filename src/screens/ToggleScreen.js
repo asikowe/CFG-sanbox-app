@@ -7,7 +7,7 @@ export default function ScreenToggling() {
             <ImageBackground source={require('../../assets/road.jpg')} resizeMode='cover' style={styles.image}>
                 <View style={styles.container2}>
                     <Text style={styles.title1}>HI JOANNA</Text>
-                    <Text style={styles.title2}>Here's toggle element:</Text>
+                    <Text style={styles.title2}>Here's toggle element</Text>
                 </View>
             </ImageBackground>
         </View>
