@@ -1,3 +1,4 @@
+import ToggleElement from '../components/Toggle';
 import { ImageBackground, StyleSheet, Text, View, StatusBar } from 'react-native';
 
 export default function ScreenToggling() {
@@ -8,6 +9,7 @@ export default function ScreenToggling() {
                 <View style={styles.container2}>
                     <Text style={styles.title1}>HI JOANNA</Text>
                     <Text style={styles.title2}>Here's toggle element</Text>
+                    <ToggleElement />
                 </View>
             </ImageBackground>
         </View>
