@@ -1,13 +1,17 @@
 import ToggleElement from '../components/Toggle';
 import { ImageBackground, StyleSheet, Text, View, StatusBar } from 'react-native';
+import { useSelector } from 'react-redux';
 
 export default function ScreenToggling() {
+
+    const users = useSelector(state => state.user)
+
     return (
         <View style={styles.container1}>
             <StatusBar style="dark-content" backgroundColor="#000000" translucent={true} />
             <ImageBackground source={require('../../assets/road.jpg')} resizeMode='cover' style={styles.image}>
                 <View style={styles.container2}>
-                    <Text style={styles.title1}>HI JOANNA</Text>
+                    <Text style={styles.title1}>HI {users.username}</Text>
                     <Text style={styles.title2}>Here's toggle element</Text>
                     <ToggleElement />
                 </View>

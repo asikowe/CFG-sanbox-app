@@ -2,11 +2,9 @@ import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
 
 export default function AppButton (props) {
-    function randomText() {
-        console.log("This is a random text")
-    }
+
     return (
-        <TouchableOpacity onPress={randomText} style={styles.appButtonContainer}>
+        <TouchableOpacity onPress={props.onPress} style={styles.appButtonContainer}>
             <Text style={styles.appButtonText}>{props.buttonText}</Text>
         </TouchableOpacity>
     );
