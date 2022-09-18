@@ -1,7 +1,11 @@
-import AppNavigation from './src/components/NavigationFile'
+import AppNavigation from './src/components/NavigationFile';
+import { Provider } from "react-redux";
+import store from './src/store/store';
 
 export default function App() {
   return (
-    <AppNavigation />
+    <Provider store={store}>
+      <AppNavigation />
+    </Provider>
   );
 };
