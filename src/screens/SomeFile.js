@@ -1,11 +1,15 @@
 import { ImageBackground, StyleSheet, Text, View } from 'react-native';
+import { useSelector } from 'react-redux';
 
 export default function AnotherFile() {
+
+    const users = useSelector(state => state.user)
+
     return (
         <View style={styles.container1}>
             <ImageBackground source={require('../../assets/space.jpg')} resizeMode='cover' style={styles.image}>
                 <View style={styles.container2}>
-                    <Text style={styles.title2}>Space trip!</Text>
+                    <Text style={styles.title2}>Space trip for {users.username}!</Text>
                 </View>
             </ImageBackground>
         </View>
