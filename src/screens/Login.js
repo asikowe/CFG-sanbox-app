@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { nameValidator } from '../utils/validateUsername';
 import { passwordValidator } from '../utils/validatePassword';
 import { useSelector, useDispatch } from 'react-redux';
-import { getUsers } from '../store/actions';
+import { logIn } from '../store/actions';
 
 export default function LoggingIn({ navigation }) {
 
@@ -26,8 +26,7 @@ export default function LoggingIn({ navigation }) {
         }
         else if (username && password) {
             if (users.username == username.value && users.pswd == password.value) {
-                dispatch(getUsers());
-                navigation.navigate('Home');
+                dispatch(logIn(username));
                 } else {alert("Credentials did not match")}
                 } else {alert("Wrong Credentials")}
         };
