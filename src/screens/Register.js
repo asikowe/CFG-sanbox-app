@@ -35,7 +35,6 @@ export default function Register({ navigation }) {
             <ImageBackground source={require('../../assets/road.jpg')} resizeMode='cover' style={styles.image}>
                 <View style={styles.container2}>
                     <Text style={styles.title1}>REGISTER</Text>
-                    {/* <Text style={styles.title2}>User: {name}</Text> */}
                     <Input 
                         containerStyle={styles.logincontainer} 
                         inputStyle={styles.logincontainer}
